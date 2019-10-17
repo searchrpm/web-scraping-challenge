@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+
+    
+  <p>
+    <div class="row" id="featured-mars-image">
+      <div class="col-md-12">
+        <img src="{{mars.featured_image_url}}">
+      </div>
+    </div>
+  </p>
+  <p>
+    <div class="row" id="current-weather-on-mars">
+      <div class="col-md-12">
+        <h4 class="heading">{{mars.mars_weather}}</h4>
+      </div>
+    </div>
+  </p>
+    <div class="row" id="mars-facts">
+        {{mars.html_table2}}
+    </div>
+  <p>
+    <div class="row" id="mars-hemisphere">
+      <div class="col-md-12">
+        <img src={{mars.mars_weather}}>
+      </div>
+    </div>
+  </p>
+
+  </div>
+</body>
+
+</html>
